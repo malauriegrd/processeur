@@ -48,7 +48,7 @@ begin
 		  if reset = '1' then 
 		      compt_perc <= (others => '0');
 		      compt_aff <= (others => '0');
-		  elsif clock = '1' and clock'event then
+		  elsif (clock = '1' and clock'event) then
 		      if (compt_perc > std_logic_vector(TO_UNSIGNED(333332, 32))) then 
 		          compt_perc <= (others => '0');
 		      else 
