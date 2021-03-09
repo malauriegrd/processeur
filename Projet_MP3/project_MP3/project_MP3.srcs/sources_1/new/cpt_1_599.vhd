@@ -57,6 +57,8 @@ begin
                     if (forward = '1') then
                         if (sig_time < "1001010111") then
                             sig_time <= sig_time + 1;
+                        else 
+                            sig_time <= "0000000001";
                         end if;
                     elsif (forward = '0') then
                         if (sig_time > "0000000001") then

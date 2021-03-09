@@ -63,27 +63,61 @@ begin
                             timer      => timer );
   
    reset <= '0', '1' after 15ns;
-   CE_aff <= '0', '1' after 20ns ; 
+   CE_aff <= '0', '1' after 20ns ;
+   
+    
   stimulus: process
   begin
-  
-    -- Put initialisation code here
-
     -- Put test bench stimulus code here
-    Play_pause <= '0'; 
-        wait for 30ns; 
-    Play_pause <= '1'; 
-        wait for 300ns;
-    Play_pause <= '0'; 
-        wait for 300ns; 
-    Forward <= '0'; 
-        wait for 35ns; 
-    Forward <= '1' ;
-        wait for 150ns;
-    Forward <= '0'; 
-        wait for 150ns;   
-        
-    Restart <= '1' after 800ns ;  
+    play_pause <= '0';
+    restart <= '0';
+    forward <= '0';
+    wait for 100ns;
+    
+    play_pause <= '1';
+    restart <= '0';
+    forward <= '1';
+    wait for 300ns; 
+    
+    play_pause <= '1';
+    restart <= '0';
+    forward <= '0';
+    wait for 30ns;
+    
+    play_pause <= '0';
+    restart <= '0';
+    forward <= '0';
+    wait for 50ns;
+    
+    play_pause <= '1';
+    restart <= '0';
+    forward <= '0';
+    wait for 50ns;
+    
+    play_pause <= '0';
+    restart <= '0';
+    forward <= '0';
+    wait for 30ns;
+    
+    play_pause <= '1';
+    restart <= '0';
+    forward <= '1';
+    wait for 30ns;
+    
+    play_pause <= '0';
+    restart <= '0';
+    forward <= '0';
+    wait for 30ns;
+    
+    play_pause <= '0';
+    restart <= '1';
+    forward <= '0';
+    wait for 30ns;
+    
+    play_pause <= '1';
+    restart <= '0';
+    forward <= '1';
+    wait for 6us;
 
   end process;
 
