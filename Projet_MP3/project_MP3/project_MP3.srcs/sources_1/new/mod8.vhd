@@ -45,7 +45,7 @@ begin
     
     process(clock, reset)
         begin
-            if(reset ='1') then 
+            if(reset ='0') then 
                 compteur <= "000"; 
             elsif(clock' event and clock= '1') then 
                 if(CE_perc ='1') then 

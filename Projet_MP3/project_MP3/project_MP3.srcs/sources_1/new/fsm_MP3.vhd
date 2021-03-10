@@ -53,7 +53,7 @@ begin
 
     process(clock, reset)
         begin 
-            if(reset ='1') then 
+            if(reset ='0') then 
                 Play_pause <='0';
                 restart <= '0';
                 Forward <= '0';

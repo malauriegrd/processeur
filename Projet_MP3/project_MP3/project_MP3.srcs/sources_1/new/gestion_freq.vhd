@@ -45,7 +45,7 @@ signal compt_aff : std_logic_vector (23 downto 0);
 begin
    P1: process (clock,reset)
 		begin
-		  if reset = '1' then 
+		  if reset = '0' then 
 		      compt_perc <= (others => '0');
 		      compt_aff <= (others => '0');
 		  elsif clock = '1' and clock'event then

@@ -1,0 +1,281 @@
+
+*** Running vivado
+    with args -log interface_utilisateur.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source interface_utilisateur.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source interface_utilisateur.tcl -notrace
+Command: synth_design -top interface_utilisateur -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1016.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'interface_utilisateur' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/interface_utilisateur.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'registre' [C:/Users/malau/Desktop/Semestre 8/conception_processeur/PGCD_sur_FPGA/PGCD_sur_FPGA.srcs/sources_1/new/registre.vhd:41]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/malau/Desktop/Semestre 8/conception_processeur/PGCD_sur_FPGA/PGCD_sur_FPGA.srcs/sources_1/new/registre.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'registre' (1#1) [C:/Users/malau/Desktop/Semestre 8/conception_processeur/PGCD_sur_FPGA/PGCD_sur_FPGA.srcs/sources_1/new/registre.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'fsm_MP3' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/fsm_MP3.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'fsm_MP3' (2#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/fsm_MP3.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'gestion_freq' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/gestion_freq.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'gestion_freq' (3#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/gestion_freq.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'cpt_1_9' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/cpt_1_9.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'cpt_1_9' (4#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/cpt_1_9.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'cpt_1_599' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/cpt_1_599.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'cpt_1_599' (5#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/cpt_1_599.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Trans' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'Trans' (6#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'mod8' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mod8.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mod8.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'mod8' (7#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mod8.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'mux8' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:48]
+WARNING: [Synth 8-614] signal 'aff_etat1' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_etat2' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_etat3' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_etat4' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_volume' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_cent' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_diz' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+WARNING: [Synth 8-614] signal 'aff_unit' is read in the process but is not in the sensitivity list [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'mux8' (8#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'interface_utilisateur' (9#1) [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/interface_utilisateur.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1016.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1016.320 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/constrs_1/new/contrainte_nexys.xdc]
+Finished Parsing XDC File [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/constrs_1/new/contrainte_nexys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/constrs_1/new/contrainte_nexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/interface_utilisateur_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/interface_utilisateur_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1050.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_MP3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                              000 |                              000
+                play_fwd |                              001 |                              001
+                   pause |                              010 |                              010
+                    stop |                              011 |                              100
+                play_bwd |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_MP3'
+WARNING: [Synth 8-327] inferring latch for variable 'sig_cpt_diz_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:150]
+WARNING: [Synth 8-327] inferring latch for variable 'sig_cpt_cent_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'aff_etat_1_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'aff_etat_2_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'aff_etat_4_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/Trans.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 'cp_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'sept_seg_reg' [C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.srcs/sources_1/new/mux8.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 3     
+	  11 Input    8 Bit        Muxes := 2     
+	   7 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   5 Input    1 Bit        Muxes := 6     
+	  10 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1050.082 ; gain = 33.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     3|
+|4     |LUT2   |     2|
+|5     |LUT3   |    14|
+|6     |LUT4   |     7|
+|7     |LUT5   |    13|
+|8     |LUT6   |    24|
+|9     |FDCE   |    35|
+|10    |FDPE   |     2|
+|11    |LD     |     5|
+|12    |IBUF   |     7|
+|13    |OBUF   |     8|
+|14    |OBUFT  |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1054.320 ; gain = 4.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1054.320 ; gain = 38.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1066.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1071.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1071.918 ; gain = 55.598
+INFO: [Common 17-1381] The checkpoint 'C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.runs/synth_1/interface_utilisateur.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file interface_utilisateur_utilization_synth.rpt -pb interface_utilisateur_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 10 13:48:20 2021...

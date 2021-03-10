@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 10 13:46:56 2021
+# Process ID: 13684
+# Current directory: C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.runs/synth_1
+# Command line: vivado.exe -log interface_utilisateur.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source interface_utilisateur.tcl
+# Log file: C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.runs/synth_1/interface_utilisateur.vds
+# Journal file: C:/Users/malau/Documents/GitHub/processeur/Projet_MP3/project_MP3/project_MP3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source interface_utilisateur.tcl -notrace
